@@ -1,6 +1,6 @@
 .nav-bar {
   background: #C6D3D8;
-  width: 120px;
+  width: 160px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -10,18 +10,35 @@
   .logo{
     display: block;
     padding: 8px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #4d4d4e;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: 'Coolvetica';
 
-    img{
+    .First-name{
       display: block;
-      margin: 8px auto;
-      width: 24px;
       height: auto;
+      letter-spacing: 2px;
 
-      &.sub-logo{
-        width: 50px;
-      }
+    }
+
+    .Last-name{
+      margin-top: 30px;
+      width: 60px;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+
+    &:hover {
+      font-size: 27px;
+      border-top: 3px solid #BB9F06;
+      border-bottom: 3px solid #BB9F06;
     }
   }
+
 
   nav {
     display: block;
@@ -31,11 +48,9 @@
     top: 50%;
     margin-top: -120px;
     width: 100%;
-    color: #694F5D;
 
     a {
       font-size: 30px;
-      color: #694F5D;
       display: block;
       line-height: 51px;
       height: 51px;
@@ -113,7 +128,7 @@
       a{
         padding: 7px 0;
         display: block;
-        font-size: 20px;
+        font-size: 25px;
         line-height: 16px;
 
         &:hover svg{
