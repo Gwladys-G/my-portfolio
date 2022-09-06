@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faTrack } from '@fortawesome/free-solid-svg-icons'
 import {faReact, faHtml5, faCss3, faJsSquare, faGitAlt, faNodeJs } from '@fortawesome/free-brands-svg-icons'
 import Loader from "react-loaders";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -34,13 +35,15 @@ const About = () => {
         <p>
           After working in Product Management and
           Product Operations in the tech industry for several
-          years, i have decided to focus on the technical and
-          development aspects of that field.
+          years, i have decided to pursue my interest and excitment towards the technical aspects of that field; Web and Software Development.
         </p>
         <p>
-          I am very excited to contribute and expand my
-          web development skills as a Full Stack or Backend
-          Software Developer.
+          My technology skillsets currently include <span style={{fontWeight: 'bold'}}>Ruby On Rails</span>,<span style={{fontWeight: 'bold'}}> Javascript</span>, and <span style={{fontWeight: 'bold'}}>ReactJS</span>.
+          I am actively leaning <span style={{fontStyle: 'italic'}}>TypeScript</span> and <span style={{fontStyle: 'italic'}}>NodeJs</span> and will update my <span style={{textDecoration: 'none',color: 'green'}} >{<Link to="/portfolio">Portfolio</Link>}</span> as soon as I have projects up and running !
+        </p>
+        <p>
+          Additionaly, I have both my Professional Scrum Master I (PSM I) and Professional Scrum Product Owner (PSPO I)
+          certifications and enjoy working in Agile environments 😉.
         </p>
       </div>
 

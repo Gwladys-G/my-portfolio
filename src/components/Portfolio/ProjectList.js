@@ -1,5 +1,7 @@
 import React from 'react'
 import portfolioData from "../../data/portfolio.json"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faGithub} from '@fortawesome/free-brands-svg-icons'
 
 
 
@@ -12,12 +14,21 @@ export default function ProjectList() {
                 <div className="image-box" key={idx}>
                   <img src="https://via.placeholder.com/50" alt="snapshot" className="portfolio-image"/>
                   <div className="content">
-                      <p className="title">{project.name}</p>
-                      <h4 className="description">{project.skills}</h4>
+                      <p className="title">{project.title}</p>
+                      <h4 className="description">{project.skills.join(", ")}</h4>
+                      <div className='wrapper-cta'>
                       <button
                           className="btn"
                           onClick={() => window.open(project.url)}
-                      >View</button>
+                      >View
+                      </button>
+                      <FontAwesomeIcon
+                        icon={faGithub}
+                        className="github"
+                        onClick={() => window.open(project.github)}
+                        color='#4d4d4e'
+                      />
+                      </div>
                   </div>
                 </div>
             )

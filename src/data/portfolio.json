@@ -17,14 +17,14 @@
     },
     {
       "cover": "/portfolio/dinocover.png",
-      "title": "tictactoe Game",
+      "title": "TicTacToe Game",
       "skills": ["Javascript", "CSS"],
       "github": "https://github.com/Gwladys-G/my-tictactoe-game",
       "url":"https://gwladys-g.github.io/my-tictactoe-game/"
     },
     {
       "cover": "/portfolio/dinocover.png",
-      "title": "pong Game",
+      "title": "Pong Game",
       "skills": ["Javascript", "CSS"],
       "github": "https://github.com/Gwladys-G/my-pong-game",
       "url":"https://gwladys-g.github.io/my-pong-game/"
@@ -32,21 +32,21 @@
     {
       "cover": "/portfolio/dinocover.png",
       "title": "Calculator",
-      "skills": ["Javascript", "CSS"],
+      "skills": ["ReactJS", "CSS"],
       "github": "https://github.com/Gwladys-G/my-calculator",
       "url":"https://gwladys-g.github.io/my-calculator/"
     },
     {
       "cover": "/portfolio/dinocover.png",
       "title": "Currency Converter",
-      "skills": ["Javascript", "CSS"],
+      "skills": ["ReactJS", "CSS", "RestAPI"],
       "github": "https://github.com/Gwladys-G/my-currencyconverter",
       "url":"https://gwladys-g.github.io/my-currencyconverter/"
     },
     {
       "cover": "/portfolio/dinocover.png",
-      "title": "To do app",
-      "skills": ["Javascript", "CSS"],
+      "title": "To-do App",
+      "skills": ["ReactJS", "CSS", "Boostrap","RestAPI"],
       "github": "https://github.com/Gwladys-G/my-todoreactapp",
       "url":"https://gwladys-g.github.io/my-todoreactapp/"
     }
