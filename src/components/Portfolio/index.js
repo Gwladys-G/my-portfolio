@@ -21,18 +21,23 @@ const Portfolio = () => {
   const renderPortfolio = (portfolio) => {
     return (
       <div className='images-container'>
+        <ul>
+
         {
           portfolio.map((project,idx) => {
             return (
+              <li>
               <div className='image-box' key={idx}>
-                <img src={project.cover}
+                {/* <img src={project.cover}
                   alt="projectcover"
-                  className='portfolio-cover'/>
-                <h2>{project.title}</h2>
+                  className='portfolio-cover'/> */}
+                <a href={project.url} target="_blank" rel="noreferrer">{project.title}</a>
               </div>
+              </li>
             )
           })
         }
+        </ul>
 
       </div>
     )
