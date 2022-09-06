@@ -2,7 +2,7 @@ import Loader from 'react-loaders'
 import './index.scss'
 import AnimatedLetters from "../AnimatedLetters";
 import { useEffect, useState } from "react";
-import portfolioData from "../../data/portfolio.json"
+import ProjectList from './ProjectList';
 
 const Portfolio = () => {
 
@@ -18,30 +18,29 @@ const Portfolio = () => {
     }
   }, [])
 
-  const renderPortfolio = (portfolio) => {
-    return (
-      <div className='images-container'>
-        <ul>
-
-        {
-          portfolio.map((project,idx) => {
-            return (
-              <li>
-              <div className='image-box' key={idx}>
-                {/* <img src={project.cover}
-                  alt="projectcover"
-                  className='portfolio-cover'/> */}
-                <a href={project.url} target="_blank" rel="noreferrer">{project.title}</a>
-              </div>
-              </li>
-            )
-          })
-        }
-        </ul>
-
-      </div>
-    )
-  }
+  // const renderPortfolio = (portfolio) => {
+  //   return (
+  //     <div className="images-container">
+  //     {
+  //         portfolio.map((project, idx) => {
+  //             return (
+  //                 <div className="image-box" key={idx}>
+  //                   <img src="https://via.placeholder.com/50" alt="snapshot" className="portfolio-image"/>
+  //                   <div className="content">
+  //                       <p className="title">{project.name}</p>
+  //                       <h4 className="description">{project.skills}</h4>
+  //                       <button
+  //                           className="btn"
+  //                           onClick={() => window.open(project.url)}
+  //                       >View</button>
+  //                   </div>
+  //                 </div>
+  //             )
+  //         })
+  //     }
+  // </div>
+  //   )
+  // }
   return (
     <>
     <div className='container portfolio-page'>
@@ -52,7 +51,7 @@ const Portfolio = () => {
           idx={15}
         />
       </h1>
-      <div>{renderPortfolio(portfolioData.portfolio)}</div>
+      <ProjectList/>
     </div>
     <Loader type="ball-spin-fade-loader"/>
     </>

@@ -4,8 +4,10 @@
     left: 20%;
     top: 50%;
     transform: translateY(-50%);
-    width: 50%;
+    width: 55%;
     max-height: 90%;
+    word-wrap: break-word;
+
   }
 
   h1 {
@@ -15,6 +17,7 @@
     margin: 0;
     font-family: 'Coolvetica';
     font-weight: 400;
+
 
     &:before {
       content: '<h1>';

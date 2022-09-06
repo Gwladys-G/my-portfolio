@@ -1,49 +1,50 @@
+
 {
   "portfolio":[
     {
-      "cover": "/portfolio/snake/snakecover.png",
+      "cover": "/blabla/dinocover.png",
       "title": "Snake Game",
       "skills": ["Javascript", "CSS"],
       "github": "https://github.com/Gwladys-G/my-snake-game",
       "url":"https://gwladys-g.github.io/my-snake-game/"
     },
     {
-      "cover": "/portfolio/dino/dinocover.png",
+      "cover": "/portfolio/dinocover.png",
       "title": "Dino Chrome Game",
       "skills": ["Javascript", "CSS"],
       "github": "https://github.com/Gwladys-G/dino-chrom-game",
       "url":"https://gwladys-g.github.io/dino-chrom-game/"
     },
     {
-      "cover": "/portfolio/snake/tictactoe.png",
+      "cover": "/portfolio/dinocover.png",
       "title": "tictactoe Game",
       "skills": ["Javascript", "CSS"],
       "github": "https://github.com/Gwladys-G/my-tictactoe-game",
       "url":"https://gwladys-g.github.io/my-tictactoe-game/"
     },
     {
-      "cover": "/portfolio/snake/pong.png",
+      "cover": "/portfolio/dinocover.png",
       "title": "pong Game",
       "skills": ["Javascript", "CSS"],
       "github": "https://github.com/Gwladys-G/my-pong-game",
       "url":"https://gwladys-g.github.io/my-pong-game/"
     },
     {
-      "cover": "/portfolio/snake/calculator.png",
+      "cover": "/portfolio/dinocover.png",
       "title": "Calculator",
       "skills": ["Javascript", "CSS"],
       "github": "https://github.com/Gwladys-G/my-calculator",
       "url":"https://gwladys-g.github.io/my-calculator/"
     },
     {
-      "cover": "/portfolio/snake/currencyconverter.png",
+      "cover": "/portfolio/dinocover.png",
       "title": "Currency Converter",
       "skills": ["Javascript", "CSS"],
       "github": "https://github.com/Gwladys-G/my-currencyconverter",
       "url":"https://gwladys-g.github.io/my-currencyconverter/"
     },
     {
-      "cover": "/portfolio/snake/todoreactapp.png",
+      "cover": "/portfolio/dinocover.png",
       "title": "To do app",
       "skills": ["Javascript", "CSS"],
       "github": "https://github.com/Gwladys-G/my-todoreactapp",
