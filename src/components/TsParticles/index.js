@@ -44,7 +44,7 @@ const ParticleHomeBackground = () => {
           },
           number: { density: { enable: true, area: 1080 }, value: 10 },
           opacity: {
-            value: 0.2
+            value: 0.1
           },
           shape: {
             type: "circle"
