@@ -28,6 +28,7 @@ const Portfolio = () => {
                 <img src={project.cover}
                   alt="projectcover"
                   className='portfolio-cover'/>
+                <h2>{project.title}</h2>
               </div>
             )
           })
