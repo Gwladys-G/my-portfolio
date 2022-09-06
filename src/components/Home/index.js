@@ -1,8 +1,8 @@
-import LogoTitle from "../../assets/images/logo.png"
 import { Link } from "react-router-dom"
 import './index.scss';
 import AnimatedLetters from "../AnimatedLetters";
 import { useEffect, useState } from "react";
+import Typewriter from "typewriter-effect";
 
 
 const Home = () => {
@@ -51,7 +51,24 @@ const Home = () => {
         strArray={jobArray}
         idx={32}/>
         </h1>
-        <h2>Inspiring Full Stack Developer</h2>
+        <Typewriter
+          options={{
+            autoStart: true,
+            delay:50,
+            deleteSpeed: 0.3,
+          }}
+
+          onInit={
+            (typewriter) => {
+              typewriter
+                .typeString("Inspiring Full Stack Developer")
+                .pauseFor(2000)
+                .deleteAll()
+                .typeString("Full Stack Developer")
+                .start()
+            }
+          }
+        />
         <Link to="/contact" className='flat-button'>CONTACT ME</Link>
       </div>
 
