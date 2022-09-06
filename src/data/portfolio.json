@@ -1,0 +1,18 @@
+{
+  "portfolio":[
+    {
+      "cover": "/portfolio/snake/snakecover.png",
+      "title": "Snake Game",
+      "skills": ["Javascript", "CSS"],
+      "github": "https://github.com/Gwladys-G/my-snake-game",
+      "url":"https://gwladys-g.github.io/my-snake-game/"
+    },
+    {
+      "cover": "/portfolio/dino/dinocover.png",
+      "title": "Dino Chrome Game",
+      "skills": ["Javascript", "CSS"],
+      "github": "https://github.com/Gwladys-G/dino-chrom-game",
+      "url":"https://gwladys-g.github.io/dino-chrom-game/"
+    }
+  ]
+}
