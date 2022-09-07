@@ -18,29 +18,6 @@ const Portfolio = () => {
     }
   }, [])
 
-  // const renderPortfolio = (portfolio) => {
-  //   return (
-  //     <div className="images-container">
-  //     {
-  //         portfolio.map((project, idx) => {
-  //             return (
-  //                 <div className="image-box" key={idx}>
-  //                   <img src="https://via.placeholder.com/50" alt="snapshot" className="portfolio-image"/>
-  //                   <div className="content">
-  //                       <p className="title">{project.name}</p>
-  //                       <h4 className="description">{project.skills}</h4>
-  //                       <button
-  //                           className="btn"
-  //                           onClick={() => window.open(project.url)}
-  //                       >View</button>
-  //                   </div>
-  //                 </div>
-  //             )
-  //         })
-  //     }
-  // </div>
-  //   )
-  // }
   return (
     <>
     <div className='container portfolio-page'>

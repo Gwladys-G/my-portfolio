@@ -2,49 +2,49 @@
 {
   "portfolio":[
     {
-      "cover": "/blabla/dinocover.png",
+      "cover": "/portfolio/snake/snakecover.png",
       "title": "Snake Game",
       "skills": ["Javascript", "CSS"],
       "github": "https://github.com/Gwladys-G/my-snake-game",
       "url":"https://gwladys-g.github.io/my-snake-game/"
     },
     {
-      "cover": "/portfolio/dinocover.png",
+      "cover": "/portfolio/dino/dinocover.png",
       "title": "Dino Chrome Game",
       "skills": ["Javascript", "CSS"],
       "github": "https://github.com/Gwladys-G/dino-chrom-game",
       "url":"https://gwladys-g.github.io/dino-chrom-game/"
     },
     {
-      "cover": "/portfolio/dinocover.png",
+      "cover": "/portfolio/snake/snakecover.png",
       "title": "TicTacToe Game",
       "skills": ["Javascript", "CSS"],
       "github": "https://github.com/Gwladys-G/my-tictactoe-game",
       "url":"https://gwladys-g.github.io/my-tictactoe-game/"
     },
     {
-      "cover": "/portfolio/dinocover.png",
+      "cover": "/portfolio/snake/snakecover.png",
       "title": "Pong Game",
       "skills": ["Javascript", "CSS"],
       "github": "https://github.com/Gwladys-G/my-pong-game",
       "url":"https://gwladys-g.github.io/my-pong-game/"
     },
     {
-      "cover": "/portfolio/dinocover.png",
+      "cover": "/portfolio/snake/snakecover.png",
       "title": "Calculator",
       "skills": ["ReactJS", "CSS"],
       "github": "https://github.com/Gwladys-G/my-calculator",
       "url":"https://gwladys-g.github.io/my-calculator/"
     },
     {
-      "cover": "/portfolio/dinocover.png",
+      "cover": "/portfolio/snake/snakecover.png",
       "title": "Currency Converter",
       "skills": ["ReactJS", "CSS", "RestAPI"],
       "github": "https://github.com/Gwladys-G/my-currencyconverter",
       "url":"https://gwladys-g.github.io/my-currencyconverter/"
     },
     {
-      "cover": "/portfolio/dinocover.png",
+      "cover": "/portfolio/snake/snakecover.png",
       "title": "To-do App",
       "skills": ["ReactJS", "CSS", "Boostrap","RestAPI"],
       "github": "https://github.com/Gwladys-G/my-todoreactapp",
