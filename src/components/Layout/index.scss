@@ -44,7 +44,9 @@
   animation-delay: 1s;
 }
 
-.about-page, .portfolio-page {
+.about-page,
+ .portfolio-page,
+ .experience-page {
   .text-zone {
     position: absolute;
     left: 17%;
@@ -134,7 +136,8 @@
 
 
     &.about-page,
-    &.portfolio-page {
+    &.portfolio-page,
+    &.experience-page {
 
       .text-zone{
         position: initial;
