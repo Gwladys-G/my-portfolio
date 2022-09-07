@@ -11,7 +11,8 @@
   .logo{
     text-decoration: none;
     color: #4d4d4e;
-    font-family: 'Coolvetica';
+    // font-family: 'Coolvetica';
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     width: 80%;
     margin: 28px auto;
@@ -70,8 +71,8 @@
 
       &::after {
         content: '';
-        font-size: 15px;
-        font-weight: bolder;
+        font-size: 14px;
+        font-weight: 200;
         position: absolute;
         bottom: 0;
         display: block;
@@ -80,7 +81,7 @@
         opacity: 0;
         transition: all 0.3s ease-out;
         margin: auto;
-        padding: O 2px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
       }
 
        &:first-child {

@@ -286,14 +286,18 @@
     padding: 20px;
     box-sizing: border-box;
 
+    .images-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr
+  }
+
     h1.page-title {
       margin-left: 20px;
       margin-top: 20px;
     }
     .image-box{
-      flex: 1 0 20%;
       height: 200px;
-      max-width: calc(50% - 10px);
+      max-width: calc(100% - 10px);
     }
   }
 }
