@@ -2,7 +2,7 @@ import Loader from 'react-loaders'
 import './index.scss'
 import AnimatedLetters from "../AnimatedLetters";
 import { useEffect, useState } from "react";
-import Pdf from './Gwladys_Engels_Aug_2022.pdf';
+import Pdf from './Gwladys_Engels_Sep_2022.pdf';
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
