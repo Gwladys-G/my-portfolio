@@ -39,18 +39,18 @@ const Home = () => {
         <span className={`${letterClass} _19`}>e</span>
         <span className={`${letterClass} _20`}>r</span>
         <span className={`${letterClass} _21`}>e,</span>
-        <span className={`${letterClass} _22`}> </span>
-        <span className={`${letterClass} _23`}>I</span>
-        <span className={`${letterClass} _24`}>'m</span>
-        <span className={`${letterClass} _25`}> </span>
-        <span className={`${letterClass} _26`}>G</span>
+        <br />
+        <span className={`${letterClass} _22`}>I</span>
+        <span className={`${letterClass} _23`}>'m</span>
+        <span className={`${letterClass} _23`}> </span>
+        <span className={`${letterClass} _25`}>G</span>
         <AnimatedLetters letterClass={letterClass}
         strArray={nameArray}
-        idx={26}/>
+        idx={25}/>
         <br />
         <AnimatedLetters letterClass={letterClass}
         strArray={jobArray}
-        idx={32}/>
+        idx={31}/>
         </h1>
         <Typewriter
           options={{
