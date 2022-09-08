@@ -1,21 +1,28 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.41957b23.css",
-    "main.js": "/my-portfolio/static/js/main.87e2fb45.js",
+    "main.css": "/my-portfolio/static/css/main.ca9c47ce.css",
+    "main.js": "/my-portfolio/static/js/main.b7030840.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/Calculator.png": "/my-portfolio/static/media/Calculator.12ccc21ede6be6ef6316.png",
     "static/media/Gwladys_Engels_Sep_2022.pdf": "/my-portfolio/static/media/Gwladys_Engels_Sep_2022.181896f71b014b54ee5d.pdf",
+    "static/media/Todos.png": "/my-portfolio/static/media/Todos.71a3cd22645ba707c4c5.png",
+    "static/media/Converter.png": "/my-portfolio/static/media/Converter.a7477768ff02d7d2cd3e.png",
+    "static/media/snakecover.png": "/my-portfolio/static/media/snakecover.9378d3121bc48719cded.png",
+    "static/media/TictactoeGame.png": "/my-portfolio/static/media/TictactoeGame.ff261c0fd1c9bb1da4a8.png",
+    "static/media/dinocover.png": "/my-portfolio/static/media/dinocover.8d5325539417fa72e96b.png",
+    "static/media/PongGame.png": "/my-portfolio/static/media/PongGame.e665da7f2d17bb309e11.png",
     "static/media/helvetica-neu.ttf": "/my-portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
     "static/media/LaBelleAurore.woff": "/my-portfolio/static/media/LaBelleAurore.9c5433c64baa43d1d274.woff",
     "static/media/LaBelleAurore.woff2": "/my-portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
     "static/media/CoolveticaRg-Regular.woff": "/my-portfolio/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
     "static/media/CoolveticaRg-Regular.woff2": "/my-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/my-portfolio/index.html",
-    "main.41957b23.css.map": "/my-portfolio/static/css/main.41957b23.css.map",
-    "main.87e2fb45.js.map": "/my-portfolio/static/js/main.87e2fb45.js.map",
+    "main.ca9c47ce.css.map": "/my-portfolio/static/css/main.ca9c47ce.css.map",
+    "main.b7030840.js.map": "/my-portfolio/static/js/main.b7030840.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.41957b23.css",
-    "static/js/main.87e2fb45.js"
+    "static/css/main.ca9c47ce.css",
+    "static/js/main.b7030840.js"
   ]
 }
