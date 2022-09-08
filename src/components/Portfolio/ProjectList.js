@@ -1,7 +1,8 @@
 import React from 'react'
-import portfolioData from "../../data/portfolio.json"
+// import portfolioData from "../../data/portfolio.json"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faGithub} from '@fortawesome/free-brands-svg-icons'
+import { dataProjects } from './DataProjects'
 
 
 
@@ -9,10 +10,9 @@ export default function ProjectList() {
   return (
     <div className="images-container">
     {
-      portfolioData.portfolio.map((project, idx) => {
-          return (
-            <div className="image-box" key={idx}>
-              {/* <img src="https://via.placeholder.com/50" alt="snapshot" className="portfolio-image"/> */}
+      dataProjects.map((project, idx) => {
+        return (
+          <div className="image-box" key={idx}>
               <img src={project.cover} alt="snapshot" className="portfolio-image"/>
               <div className="content">
                   <p className="title">{project.title}</p>
