@@ -2,55 +2,59 @@
   left: 242px;
   top: 80px;
 
-  .Download-Resume{
-
-   a {
-      font-size: 20px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #FDF6E3;
-      // color: #C6D3D8;
-    }
-
-    button {
-      padding: 10px 15px;
-      border-radius: 15px;
-      // background-color: #FDF6E3;
-      background-color: #694F5D;
-      border: #FDF6E3;
-      box-shadow: 1px 3px 11px #847448;
-      position: absolute;
-      left: 30%;
-      top: 149px
-    }
-
-    button:hover{
-      cursor: pointer;
-      transform: translateY(-3px);
-    }
-  }
-
-  .Linkedin-bck{
+  .content-zone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    top: 40%;
-    left: 37%;
-    font-size:50px;
-      svg{
-        color: #694F5D;
-      }
-    }
+    top: 30%;
+    left: 32%;
 
-  .Linkedin-bck:hover{
-    transform: translateY(-3px);
-    color: #C6D3D8;
+      .Download-Resume{
+          padding-bottom: 40px;
+      a {
+          font-size: 20px;
+          text-decoration: none;
+          font-weight: bold;
+          color: #FDF6E3;
+          // color: #C6D3D8;
+        }
+
+        button {
+          padding: 10px 15px;
+          border-radius: 15px;
+          background-color: #FDF6E3;
+          background-color: #694F5D;
+          border: #FDF6E3;
+          box-shadow: 1px 3px 11px #847448;
+          // position: absolute;
+          // left: 30%;
+          // top: 149px
+        }
+
+        button:hover{
+          cursor: pointer;
+          transform: translateY(-3px);
+        }
+      }
+
+      a.Linkedin-bck{
+        font-size:40px;
+        svg{
+          color: #694F5D;
+        }
+      }
+
+      a.Linkedin-bck:hover {
+        transform: translateY(-3px);
+        color: #C6D3D8;
+      }
 
   }
-
-  // color: #694F5D;
-  // color: #BB9F06;
-  // color: #C6D3D8;
-  // color: #FDF6E3;
 }
+
+
+
 @media screen and (max-width: 1200px) {
 
   .experience-page {
@@ -62,6 +66,9 @@
       left: 53px;
     }
 
+    .content-zone{
+      left: 26%;
+
     .Download-Resume{
       a {
         font-size: 20px;
@@ -69,17 +76,17 @@
 
       button {
       padding: 10px 15px;
-      left: 20%;
-      top: 207px
+      position: relative;
+      top: 150px;
       }
     }
 
     .Linkedin-bck{
-    position: absolute;
-    top: 396%;
-    left: 44%;
+    position: relative;
+    top: 132px;
+    // left: 44%;
     font-size: 50px;
     }
   }
-
+}
 }

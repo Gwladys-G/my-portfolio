@@ -35,12 +35,14 @@ const Experience = () => {
               idx={15}
             />
         </h1>
-        <div className="Download-Resume">
-            <button><a href = {Pdf} target = "_blank" rel="noreferrer">Download My Resume</a></button>
+        <div className='content-zone'>
+          <div className="Download-Resume">
+              <button><a href = {Pdf} target = "_blank" rel="noreferrer">See My Resume</a></button>
+          </div>
+          <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/gwladysengels/' className='Linkedin-bck'>
+                <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e'/>
+          </a>
         </div>
-        <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/gwladysengels/' className='Linkedin-bck'>
-              <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e'/>
-        </a>
 
      </div>
       <Loader type="ball-spin-fade-loader"/>
