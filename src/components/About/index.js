@@ -39,7 +39,7 @@ const About = () => {
         </p>
         <p>
           My technology skillsets currently include <span style={{fontWeight: 'bold'}}>Ruby On Rails</span>,<span style={{fontWeight: 'bold'}}> Javascript</span>, and <span style={{fontWeight: 'bold'}}>ReactJS</span>.
-          I am actively leaning <span style={{fontStyle: 'italic'}}>TypeScript</span> and <span style={{fontStyle: 'italic'}}>NodeJs</span> and will update my <span style={{textDecoration: 'none',color: 'green'}} >{<Link to="/portfolio">Portfolio</Link>}</span> as soon as I have projects up and running !
+          I am actively practising <span style={{fontStyle: 'italic'}}>TypeScript</span> and <span style={{fontStyle: 'italic'}}>Express-NodeJs</span> and will update my <span style={{textDecoration: 'none',color: 'green'}} >{<Link to="/portfolio">Portfolio</Link>}</span> as soon as I have projects up and running !
         </p>
         <p>
           Additionaly, I have both my Professional Scrum Master I (PSM I) and Professional Scrum Product Owner (PSPO I)
