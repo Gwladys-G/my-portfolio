@@ -15,7 +15,7 @@ export const dataProjects = [
     title: "Brunchtime",
     skills: ["Ruby On Rails", "Javascript", "CSS", "Sass"],
     github: "https://github.com/Gwladys-G/brunchtime",
-    url:"https://www.brunchtime.live/",
+    url:"https://brunchtime-production.up.railway.app/",
   },
   {
     cover: Snake,
