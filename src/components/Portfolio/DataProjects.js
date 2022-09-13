@@ -5,10 +5,18 @@ import Calculator from '../../assets/images/portfoliocover/Calculator.png'
 import Currency from '../../assets/images/portfoliocover/Converter.png'
 import Todo from '../../assets/images/portfoliocover/Todos.png'
 import TicTacToe from '../../assets/images/portfoliocover/TictactoeGame.png'
+import Brunchtime from '../../assets/images/portfoliocover/Brunchtime.png'
 
 
 
 export const dataProjects = [
+  {
+    cover: Brunchtime,
+    title: "Brunchtime",
+    skills: ["Ruby On Rails", "Javascript", "CSS", "Sass"],
+    github: "https://github.com/Gwladys-G/brunchtime",
+    url:"https://www.brunchtime.live/",
+  },
   {
     cover: Snake,
     title: "Snake Game",
