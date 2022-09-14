@@ -13,7 +13,7 @@ export const dataProjects = [
   {
     cover: Brunchtime,
     title: "Brunchtime",
-    skills: ["Ruby On Rails", "Javascript", "CSS", "Sass"],
+    skills: ["Ruby On Rails", "postgresql", "Javascript", "CSS", "Sass"],
     github: "https://github.com/Gwladys-G/brunchtime",
     url:"https://brunchtime-production.up.railway.app/",
   },
