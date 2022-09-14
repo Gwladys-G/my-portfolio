@@ -34,7 +34,7 @@ export const dataProjects = [
   {
     cover:  TicTacToe,
     title: "TicTacToe Game",
-    skills: ["Javascript", "CSS", "testestestest", "testetsstes"],
+    skills: ["Javascript", "CSS"],
     github: "https://github.com/Gwladys-G/my-tictactoe-game",
     url:"https://gwladys-g.github.io/my-tictactoe-game/"
   },
