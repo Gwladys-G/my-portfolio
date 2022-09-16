@@ -6,10 +6,18 @@ import Currency from '../../assets/images/portfoliocover/Converter.png'
 import Todo from '../../assets/images/portfoliocover/Todos.png'
 import TicTacToe from '../../assets/images/portfoliocover/TictactoeGame.png'
 import Brunchtime from '../../assets/images/portfoliocover/Brunchtime.png'
+import BlogPosts from '../../assets/images/portfoliocover/BlogPosts.png'
 
 
 
 export const dataProjects = [
+  {
+    cover: BlogPosts,
+    title: "BlogPosts",
+    skills: ["Node.js", "Mongoose ", "Express.js", "Bootstrap", "authentification"],
+    github: "https://github.com/Gwladys-G/my-blogposts",
+    url:"https://my-blogposts-production.up.railway.app/",
+  },
   {
     cover: Brunchtime,
     title: "Brunchtime",
@@ -48,21 +56,21 @@ export const dataProjects = [
   {
     cover:  Calculator,
     title: "Calculator",
-    skills: ["ReactJS", "CSS"],
+    skills: ["React.js", "CSS"],
     github: "https://github.com/Gwladys-G/my-calculator",
     url:"https://gwladys-g.github.io/my-calculator/"
   },
   {
     cover:  Currency,
     title: "Currency Converter",
-    skills: ["ReactJS", "CSS", "RestAPI"],
+    skills: ["React.js", "CSS", "RestAPI"],
     github: "https://github.com/Gwladys-G/my-currencyconverter",
     url:"https://gwladys-g.github.io/my-currencyconverter/"
   },
   {
     cover:  Todo,
     title: "To-do App",
-    skills: ["ReactJS", "CSS", "Boostrap","RestAPI"],
+    skills: ["React.js", "CSS", "Boostrap","RestAPI"],
     github: "https://github.com/Gwladys-G/my-todoreactapp",
     url:"https://gwladys-g.github.io/my-todoreactapp/"
   }
