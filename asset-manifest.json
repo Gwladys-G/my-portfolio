@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.ca9c47ce.css",
-    "main.js": "/my-portfolio/static/js/main.9e12b22b.js",
+    "main.js": "/my-portfolio/static/js/main.c2376445.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/Calculator.png": "/my-portfolio/static/media/Calculator.12ccc21ede6be6ef6316.png",
     "static/media/Brunchtime.png": "/my-portfolio/static/media/Brunchtime.1ff50be04aeee926e6ee.png",
     "static/media/Gwladys_Engels_Sep_2022.pdf": "/my-portfolio/static/media/Gwladys_Engels_Sep_2022.a4edd9f037cd11cfe929.pdf",
+    "static/media/BlogPosts.png": "/my-portfolio/static/media/BlogPosts.343ecac025f0ba680277.png",
     "static/media/Todos.png": "/my-portfolio/static/media/Todos.71a3cd22645ba707c4c5.png",
     "static/media/Converter.png": "/my-portfolio/static/media/Converter.a7477768ff02d7d2cd3e.png",
     "static/media/snakecover.png": "/my-portfolio/static/media/snakecover.9378d3121bc48719cded.png",
@@ -19,11 +20,11 @@
     "static/media/CoolveticaRg-Regular.woff2": "/my-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/my-portfolio/index.html",
     "main.ca9c47ce.css.map": "/my-portfolio/static/css/main.ca9c47ce.css.map",
-    "main.9e12b22b.js.map": "/my-portfolio/static/js/main.9e12b22b.js.map",
+    "main.c2376445.js.map": "/my-portfolio/static/js/main.c2376445.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ca9c47ce.css",
-    "static/js/main.9e12b22b.js"
+    "static/js/main.c2376445.js"
   ]
 }
