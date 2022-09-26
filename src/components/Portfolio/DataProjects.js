@@ -28,14 +28,14 @@ export const dataProjects = [
   {
     cover: Snake,
     title: "Snake Game",
-    skills: ["Javascript", "CSS"],
+    skills: ["Javascript", "CSS","<Desktop Only>"],
     github: "https://github.com/Gwladys-G/my-snake-game",
     url:"https://gwladys-g.github.io/my-snake-game/",
   },
   {
     cover:  Dino,
-    title: "Dino Chrome Game",
-    skills: ["Javascript", "CSS"],
+    title: "Dino Game",
+    skills: ["Javascript", "CSS","<Desktop Only>"],
     github: "https://github.com/Gwladys-G/dino-chrom-game",
     url:"https://gwladys-g.github.io/dino-chrom-game/"
   },
@@ -49,7 +49,7 @@ export const dataProjects = [
   {
     cover:  Pong,
     title: "Pong Game",
-    skills: ["Javascript", "CSS"],
+    skills: ["Javascript", "CSS","<Desktop Only>"],
     github: "https://github.com/Gwladys-G/my-pong-game",
     url:"https://gwladys-g.github.io/my-pong-game/"
   },

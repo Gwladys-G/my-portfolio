@@ -159,9 +159,26 @@
       margin-left: 20px;
       margin-top: 20px;
     }
+
+    p.title{
+      font-size: 18px;
+    }
+
+    h4.description{
+      font-size: 14px;
+      font-weight: 400;
+    }
+
     .image-box{
-      height: 200px;
+      height: 216px;
       max-width: calc(100% - 10px);
+
+      .portfolio-image{
+        height: 95px;
+        object-fit: scale-down;
+      }
     }
   }
+
+
 }
