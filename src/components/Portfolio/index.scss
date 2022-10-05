@@ -120,7 +120,6 @@
 
       &:after {
           content: "";
-          background: linear-gradient(180deg, #BB9F06, #000);
           position: absolute;
           left: 0;
           right: 0;
@@ -139,7 +138,11 @@
 
       &:hover .content {
           bottom: 0;
-          background: transparent;
+          background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.2) 0,
+            rgba(0, 0, 0, 1)
+        );
       }
   }
 }
