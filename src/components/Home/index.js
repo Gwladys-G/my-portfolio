@@ -62,7 +62,7 @@ const Home = () => {
           onInit={
             (typewriter) => {
               typewriter
-                .typeString("Inspiring Full Stack Developer")
+                .typeString("Full Stack Developer")
                 .pauseFor(2000)
                 .deleteAll()
                 .typeString("Full Stack Developer")
