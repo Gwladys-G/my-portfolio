@@ -55,15 +55,19 @@ const Home = () => {
         <Typewriter
           options={{
             autoStart: true,
-            delay:50,
-            deleteSpeed: 0.3,
+            delay:40,
+            deleteSpeed: 0.5,
           }}
 
           onInit={
             (typewriter) => {
               typewriter
-                .typeString("Full Stack Developer")
-                .pauseFor(2000)
+                .pauseFor(1000)
+                .typeString("BackEnd")
+                .pauseFor(100)
+                .deleteAll()
+                .typeString("FrontEnd")
+                .pauseFor(100)
                 .deleteAll()
                 .typeString("Full Stack Developer")
                 .start()
