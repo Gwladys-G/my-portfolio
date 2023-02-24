@@ -23,12 +23,13 @@ const SearchBar = ({ projects, setSearchResults }) => {
 
 
   return (
-    <form style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", maxWidth: "60%", margin: "0 auto", height: "3%", marginBottom: "20px"}} className='search' onSubmit={handleSubmit}>
-      <input style={{ flex: 3, height: "50%"}} className='search_input' type='text' id="search" onChange={handleSearchChange} placeholder="Enter a stack eg: React "/>
-      <button  style={{height: "100%"}} className='search_button'>
-        <FontAwesomeIcon icon={faMagnifyingGlass}/>
-      </button>
-    </form>
+<form style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", maxWidth: "60%", margin: "0 auto", height: "5%", marginBottom: "20px", borderRadius: "10px"}} className='search' onSubmit={handleSubmit}>
+  <input style={{ flex: 0.5, height: "90%", borderRadius: "5px", borderColor: "#BB9F06", borderWidth: "2px", borderStyle: "solid" }} className='search_input' type='text' id="search" onChange={handleSearchChange} placeholder="Enter a stack eg: React "/>
+  <button style={{ height: "100%", borderRadius: "5px", borderColor: "#BB9F06", borderWidth: "2px", borderStyle: "solid", marginLeft: "10px" }} className='search_button'>
+    <FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: "#BB9F06" }}/>
+  </button>
+</form>
+
   )
 }
 
