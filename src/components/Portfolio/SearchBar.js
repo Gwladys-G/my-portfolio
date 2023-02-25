@@ -69,7 +69,7 @@ const SearchBar = ({ projects, setSearchResults }) => {
         alignItems: "center",
         justifyContent: "center",
         width: "90%",
-        margin: "0px auto 150px auto",
+        margin: "0px auto 50px auto",
         height: "5%",
         borderRadius: "10px"
       }}
@@ -125,7 +125,7 @@ const SearchBar = ({ projects, setSearchResults }) => {
               top: "100%",
               left: 0,
               right: 0,
-              zIndex: 1,
+              zIndex: 2,
               background: "white",
               borderRadius: "5px",
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
