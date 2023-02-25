@@ -3,10 +3,16 @@ import './index.scss'
 import AnimatedLetters from "../AnimatedLetters";
 import { useEffect, useState } from "react";
 import ProjectList from './ProjectList';
+import { dataProjects } from './DataProjects'
+import SearchBar from './SearchBar';
 
 const Portfolio = () => {
 
   const [letterClass, setLetterClass] = useState('text-animate')
+  const [projects, setProjects] = useState([])
+  const [searchResults, setSearchResults] = useState([])
+
+
 
   useEffect(() => {
     let timeoutId = setTimeout(() => {
@@ -18,6 +24,11 @@ const Portfolio = () => {
     }
   }, [])
 
+  useEffect(() => {
+    setProjects(dataProjects)
+    setSearchResults(dataProjects)
+    }, [])
+
   return (
     <>
     <div className='container portfolio-page'>
@@ -28,7 +39,8 @@ const Portfolio = () => {
           idx={15}
         />
       </h1>
-      <ProjectList/>
+      <SearchBar projects={projects} setSearchResults={setSearchResults} dataProjects={dataProjects} />
+      <ProjectList projects={projects} setSearchResults={setSearchResults} searchResults={searchResults} />
     </div>
     <Loader type="ball-spin-fade-loader"/>
     </>
