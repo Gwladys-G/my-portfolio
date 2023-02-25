@@ -70,7 +70,7 @@ export const dataProjects = [
   {
     cover:  Todo,
     title: "To-do App",
-    skills: ["React.js", "CSS", "Boostrap","RestAPI"],
+    skills: ["React.js", "CSS", "Bootstrap","RestAPI"],
     github: "https://github.com/Gwladys-G/my-todoreactapp",
     url:"https://gwladys-g.github.io/my-todoreactapp/"
   }
