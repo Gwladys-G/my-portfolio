@@ -2,7 +2,9 @@
 p {
   text-align: justify;
 }
-
+.about-page p {
+  font-size: 14px;
+}
 
 .stage-cube-cont {
   width: 50%;
@@ -86,7 +88,7 @@ p {
 @media screen and (max-width: 1200px) {
 
   .about-page p {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .about-page .text-zone{
