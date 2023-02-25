@@ -23,15 +23,6 @@ const ParticleHomeBackground = () => {
           color: '#FDF6E3',
         },
         fpsLimit: 60,
-        interactivity: {
-          events: {
-            onClick: {
-              enable: true,
-              mode: "push",
-            },
-          },
-          resize: true,
-        },
         particles: {
           move: {
             bounce: false,
@@ -42,7 +33,7 @@ const ParticleHomeBackground = () => {
             speed: 1,
             straight: false
           },
-          number: { density: { enable: true, area: 1080 }, value: 10 },
+          number: { density: { enable: true, area: 1080 }, value: 4 },
           opacity: {
             value: 0.1
           },

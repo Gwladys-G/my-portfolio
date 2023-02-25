@@ -69,7 +69,7 @@ const SearchBar = ({ projects, setSearchResults }) => {
         alignItems: "center",
         justifyContent: "center",
         width: "90%",
-        margin: "0px auto 50px auto",
+        margin: "20px auto 30px auto",
         height: "5%",
         borderRadius: "10px"
       }}
@@ -80,7 +80,7 @@ const SearchBar = ({ projects, setSearchResults }) => {
         <input
           ref={searchInputRef}
           style={{
-            flex: 1,
+            flex: 5,
             height: "30px",
             borderRadius: "5px",
             borderColor: "#BB9F06",
@@ -88,7 +88,7 @@ const SearchBar = ({ projects, setSearchResults }) => {
             borderStyle: "solid",
             width: "100%",
             paddingLeft: "10px",
-            paddingRight: selectedKeyword ? "30px" : "10px" // Add right padding if selectedKeyword exists
+            paddingRight: selectedKeyword ? "30px" : "10px"
           }}
           className="search_input"
           type="text"

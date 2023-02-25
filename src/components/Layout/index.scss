@@ -43,12 +43,15 @@
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
 }
+.portfolio-page{
+  max-height: 93%;
+}
 
 .about-page,
  .portfolio-page,
  .experience-page {
   .text-zone {
-    position: absolute;
+    position: fixed;
     left: 17%;
     top: 50%;
     transform: translateY(-50%);
@@ -92,9 +95,6 @@
       margin-left: 20px;
       opacity: 0.6;
       line-height: 18px;
-
-
-      // animation: fadeIn 1s 1.7s backwards;
     }
   }
 
