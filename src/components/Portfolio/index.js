@@ -39,7 +39,7 @@ const Portfolio = () => {
           idx={15}
         />
       </h1>
-      <SearchBar projects={projects} setSearchResults={setSearchResults}/>
+      <SearchBar projects={projects} setSearchResults={setSearchResults} dataProjects={dataProjects} />
       <ProjectList projects={projects} setSearchResults={setSearchResults} searchResults={searchResults} />
     </div>
     <Loader type="ball-spin-fade-loader"/>

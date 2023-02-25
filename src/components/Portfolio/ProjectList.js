@@ -10,7 +10,7 @@ const ProjectList = ({ searchResults }) => {
     {
       searchResults.map((project, idx) => {
         return (
-            <Project project={project}/>
+            <Project project={project} key={idx}/>
           )
       })
     }
