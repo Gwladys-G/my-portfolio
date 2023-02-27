@@ -4,7 +4,7 @@ import { faMagnifyingGlass, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { dataProjects } from './DataProjects';
 
 
-const SearchBar = ({ projects, setSearchResults }) => {
+const SearchBar = ({ projects, setSearchResults, onMobile, setOnMobile }) => {
   const keywords = dataProjects.reduce((accumulator, project) => {
     project.skills.forEach(skill => {
       if (!accumulator.includes(skill)) {
@@ -17,34 +17,45 @@ const SearchBar = ({ projects, setSearchResults }) => {
   const [showDropdown, setShowDropdown] = useState(false);
   const searchInputRef = useRef(null);
 
-  const handleSubmit = (e) => e.preventDefault();
+const getUpdatedResults = (value) => {
+  let resultsArray ;
+  const intermediateResultsArray = projects.filter((project) => {
+    let skillList = project.skills;
+    return skillList.some((skill) =>
+      skill.toUpperCase().includes(value.toUpperCase()
+    ));
+  });
+  if (onMobile) {
+    resultsArray = intermediateResultsArray.filter(project => project.mobile === true)
+  } else {
+    resultsArray = intermediateResultsArray
+  }
+  return resultsArray
+}
 
-  const handleSearchChange = (e) => {
-    const value = e.target.value;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  }
+
+  const handleSearchChange = () => {
+    const value = searchInputRef.current.value
     if (!value) {
-      setSearchResults(projects);
+      setSearchResults(onMobile? dataProjects.filter(project => project.mobile === onMobile) : dataProjects);
     } else {
-      const resultsArray = projects.filter((project) => {
-        let skillList = project.skills;
-        return skillList.some((skill) =>
-          skill.toUpperCase().includes(value.toUpperCase())
-        );
-      });
-      setSearchResults(resultsArray);
+      setSearchResults(getUpdatedResults(value))
     }
     setSelectedKeyword(value);
     setShowDropdown(true);
   };
 
+  const handleCompatibilityToggle = (e) => {
+    setOnMobile(e.target.checked)
+    handleSearchChange();
+  }
+
   useEffect(() => {
-    const resultsArray = projects.filter((project) => {
-      let skillList = project.skills;
-      return skillList.some((skill) =>
-        skill.toUpperCase().includes(selectedKeyword.toUpperCase())
-      );
-    });
-    setSearchResults(resultsArray);
-  }, [selectedKeyword, setSearchResults, projects]);
+    setSearchResults(getUpdatedResults(selectedKeyword));
+  }, [selectedKeyword, setSearchResults, projects, onMobile]);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -69,7 +80,7 @@ const SearchBar = ({ projects, setSearchResults }) => {
         alignItems: "center",
         justifyContent: "center",
         width: "90%",
-        margin: "20px auto 30px auto",
+        margin: "20px auto 20px auto",
         height: "5%",
         borderRadius: "10px"
       }}
@@ -86,7 +97,7 @@ const SearchBar = ({ projects, setSearchResults }) => {
             borderColor: "#BB9F06",
             borderWidth: "2px",
             borderStyle: "solid",
-            width: "100%",
+            width: "90%",
             paddingLeft: "10px",
             paddingRight: selectedKeyword ? "30px" : "10px"
           }}
@@ -125,7 +136,7 @@ const SearchBar = ({ projects, setSearchResults }) => {
               top: "100%",
               left: 0,
               right: 0,
-              zIndex: 2,
+              zIndex: 9999,
               background: "white",
               borderRadius: "5px",
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
@@ -171,12 +182,20 @@ const SearchBar = ({ projects, setSearchResults }) => {
           borderColor: "#BB9F06",
           borderWidth: "2px",
           borderStyle: "solid",
-          marginLeft: "10px"
+          marginLeft: "10px",
+          marginRight: "10px"
         }}
         className="search_button"
       >
         <FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: "#BB9F06" }} />
       </button>
+      <label style={{ display: "flex", alignItems: "flex-end" }}>
+        <input
+          type="checkbox"
+          onChange={handleCompatibilityToggle}
+        />
+        <span style={{ fontSize: "1.2rem", fontWeight: "400" }}>On mobile</span>
+      </label>
     </form>
   );
 }

@@ -11,6 +11,7 @@ const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const [projects, setProjects] = useState([])
   const [searchResults, setSearchResults] = useState([])
+  const [onMobile, setOnMobile] = useState(false)
 
 
 
@@ -26,7 +27,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     setProjects(dataProjects)
-    setSearchResults(dataProjects)
+    setSearchResults(onMobile? dataProjects.filter(project => project.mobile === onMobile) : dataProjects)
     }, [])
 
   return (
@@ -39,7 +40,7 @@ const Portfolio = () => {
           idx={15}
         />
       </h1>
-      <SearchBar projects={projects} setSearchResults={setSearchResults} dataProjects={dataProjects} />
+      <SearchBar projects={projects} setSearchResults={setSearchResults} dataProjects={dataProjects} onMobile={onMobile} setOnMobile={setOnMobile} />
       <ProjectList projects={projects} setSearchResults={setSearchResults} searchResults={searchResults} />
     </div>
     <Loader type="ball-spin-fade-loader"/>
