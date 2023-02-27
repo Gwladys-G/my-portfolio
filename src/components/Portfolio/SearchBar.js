@@ -80,7 +80,7 @@ const getUpdatedResults = (value) => {
         alignItems: "center",
         justifyContent: "center",
         width: "90%",
-        margin: "20px auto 30px auto",
+        margin: "20px auto 20px auto",
         height: "5%",
         borderRadius: "10px"
       }}
@@ -97,7 +97,7 @@ const getUpdatedResults = (value) => {
             borderColor: "#BB9F06",
             borderWidth: "2px",
             borderStyle: "solid",
-            width: "100%",
+            width: "90%",
             paddingLeft: "10px",
             paddingRight: selectedKeyword ? "30px" : "10px"
           }}
@@ -136,7 +136,7 @@ const getUpdatedResults = (value) => {
               top: "100%",
               left: 0,
               right: 0,
-              zIndex: 2,
+              zIndex: 9999,
               background: "white",
               borderRadius: "5px",
               boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
@@ -182,19 +182,19 @@ const getUpdatedResults = (value) => {
           borderColor: "#BB9F06",
           borderWidth: "2px",
           borderStyle: "solid",
-          marginLeft: "10px"
+          marginLeft: "10px",
+          marginRight: "10px"
         }}
         className="search_button"
       >
         <FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: "#BB9F06" }} />
       </button>
-      <label>
+      <label style={{ display: "flex", alignItems: "flex-end" }}>
         <input
           type="checkbox"
           onChange={handleCompatibilityToggle}
-          // defaultChecked={onMobile}
         />
-        On mobile device
+        <span style={{ fontSize: "1.2rem", fontWeight: "400" }}>On mobile</span>
       </label>
     </form>
   );
