@@ -4,7 +4,7 @@ import { faMagnifyingGlass, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { dataProjects } from './DataProjects';
 
 
-const SearchBar = ({ projects, setSearchResults }) => {
+const SearchBar = ({ projects, setSearchResults, onMobile, setOnMobile }) => {
   const keywords = dataProjects.reduce((accumulator, project) => {
     project.skills.forEach(skill => {
       if (!accumulator.includes(skill)) {
@@ -17,34 +17,45 @@ const SearchBar = ({ projects, setSearchResults }) => {
   const [showDropdown, setShowDropdown] = useState(false);
   const searchInputRef = useRef(null);
 
-  const handleSubmit = (e) => e.preventDefault();
+const getUpdatedResults = (value) => {
+  let resultsArray ;
+  const intermediateResultsArray = projects.filter((project) => {
+    let skillList = project.skills;
+    return skillList.some((skill) =>
+      skill.toUpperCase().includes(value.toUpperCase()
+    ));
+  });
+  if (onMobile) {
+    resultsArray = intermediateResultsArray.filter(project => project.mobile === true)
+  } else {
+    resultsArray = intermediateResultsArray
+  }
+  return resultsArray
+}
 
-  const handleSearchChange = (e) => {
-    const value = e.target.value;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  }
+
+  const handleSearchChange = () => {
+    const value = searchInputRef.current.value
     if (!value) {
-      setSearchResults(projects);
+      setSearchResults(onMobile? dataProjects.filter(project => project.mobile === onMobile) : dataProjects);
     } else {
-      const resultsArray = projects.filter((project) => {
-        let skillList = project.skills;
-        return skillList.some((skill) =>
-          skill.toUpperCase().includes(value.toUpperCase())
-        );
-      });
-      setSearchResults(resultsArray);
+      setSearchResults(getUpdatedResults(value))
     }
     setSelectedKeyword(value);
     setShowDropdown(true);
   };
 
+  const handleCompatibilityToggle = (e) => {
+    setOnMobile(e.target.checked)
+    handleSearchChange();
+  }
+
   useEffect(() => {
-    const resultsArray = projects.filter((project) => {
-      let skillList = project.skills;
-      return skillList.some((skill) =>
-        skill.toUpperCase().includes(selectedKeyword.toUpperCase())
-      );
-    });
-    setSearchResults(resultsArray);
-  }, [selectedKeyword, setSearchResults, projects]);
+    setSearchResults(getUpdatedResults(selectedKeyword));
+  }, [selectedKeyword, setSearchResults, projects, onMobile]);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -177,6 +188,14 @@ const SearchBar = ({ projects, setSearchResults }) => {
       >
         <FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: "#BB9F06" }} />
       </button>
+      <label>
+        <input
+          type="checkbox"
+          onChange={handleCompatibilityToggle}
+          // defaultChecked={onMobile}
+        />
+        On mobile device
+      </label>
     </form>
   );
 }
