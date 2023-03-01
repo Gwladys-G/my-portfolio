@@ -33,6 +33,7 @@
 
 
 
+
       .portfolio-image {
         position: absolute;
         z-index: 1;
@@ -146,6 +147,9 @@
         );
       }
   }
+}
+.skill-icon:hover {
+  transform: scale(1.5);
 }
 
 @media screen and (max-width: 1200px) {
