@@ -33,6 +33,7 @@
 
 
 
+
       .portfolio-image {
         position: absolute;
         z-index: 1;
@@ -147,8 +148,11 @@
       }
   }
 }
+.skill-icon:hover {
+  transform: scale(1.5);
+}
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .container.portfolio-page{
     width: 100%;
     padding: 20px;
@@ -175,7 +179,6 @@
     h4.description{
       font-size: 10px;
       font-weight: 400;
-      margin: 1px 1px 1px 3px;
     }
 
     .image-box{
@@ -185,6 +188,11 @@
       .portfolio-image{
         height: 95px;
         object-fit: scale-down;
+      }
+
+      skill-icon{
+        width: '5%';
+        height: '7%';
       }
     }
   }
