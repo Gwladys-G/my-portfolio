@@ -152,7 +152,7 @@
   transform: scale(1.5);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .container.portfolio-page{
     width: 100%;
     padding: 20px;
@@ -188,6 +188,11 @@
       .portfolio-image{
         height: 95px;
         object-fit: scale-down;
+      }
+
+      skill-icon{
+        width: '5%';
+        height: '7%';
       }
     }
   }
