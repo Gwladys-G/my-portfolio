@@ -1,13 +1,12 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.b89e2890.css",
-    "main.js": "/my-portfolio/static/js/main.50ef524c.js",
+    "main.css": "/my-portfolio/static/css/main.68401190.css",
+    "main.js": "/my-portfolio/static/js/main.2afe354f.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/Calculator.png": "/my-portfolio/static/media/Calculator.12ccc21ede6be6ef6316.png",
     "static/media/Brunchtime.png": "/my-portfolio/static/media/Brunchtime.1ff50be04aeee926e6ee.png",
     "static/media/BlogPosts.png": "/my-portfolio/static/media/BlogPosts.343ecac025f0ba680277.png",
     "static/media/Todos.png": "/my-portfolio/static/media/Todos.71a3cd22645ba707c4c5.png",
-    "static/media/Gwladys_Engels_Feb_2023.pdf": "/my-portfolio/static/media/Gwladys_Engels_Feb_2023.7e0b64e321e330de07b7.pdf",
     "static/media/Converter.png": "/my-portfolio/static/media/Converter.a7477768ff02d7d2cd3e.png",
     "static/media/snakecover.png": "/my-portfolio/static/media/snakecover.9378d3121bc48719cded.png",
     "static/media/TictactoeGame.png": "/my-portfolio/static/media/TictactoeGame.ff261c0fd1c9bb1da4a8.png",
@@ -21,12 +20,12 @@
     "static/media/mongodb.png": "/my-portfolio/static/media/mongodb.3fd4ac4e5c81365ab878.png",
     "static/media/CoolveticaRg-Regular.woff2": "/my-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/my-portfolio/index.html",
-    "main.b89e2890.css.map": "/my-portfolio/static/css/main.b89e2890.css.map",
-    "main.50ef524c.js.map": "/my-portfolio/static/js/main.50ef524c.js.map",
+    "main.68401190.css.map": "/my-portfolio/static/css/main.68401190.css.map",
+    "main.2afe354f.js.map": "/my-portfolio/static/js/main.2afe354f.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b89e2890.css",
-    "static/js/main.50ef524c.js"
+    "static/css/main.68401190.css",
+    "static/js/main.2afe354f.js"
   ]
 }
